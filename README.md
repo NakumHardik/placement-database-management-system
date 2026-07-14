@@ -20,7 +20,7 @@ A **Placement Database Management System** designed to streamline campus placeme
 
 ## Technologies Used
 
-- **Database:** MySQL / PostgreSQL
+- **Database:** MySQL
 - **Language:** SQL
 - **ER Diagram:** Draw.io
 - **Version Control:** Git & GitHub
@@ -69,13 +69,49 @@ A **Placement Database Management System** designed to streamline campus placeme
 ## Project Structure
 
 ```text
-DBMS/
+placement-database-management-system/
 ├── README.md
-├── ER_Diagram.drawio.png
-├── PDMS_Relational_Schema (1).pdf
-├── SRS.pdf
-└── SQL/
+├── docs/
+│   ├── SRS.pdf
+│   ├── PDMS_Relational_Schema.pdf
+│   ├── ER_Diagram.drawio.PNG
+├── sql/
     ├── 01_create_tables.sql
     ├── 02_Insert_data.sql
     ├── 03_views.sql
     ├── 04_sample_queries.sql
+
+```
+
+---
+
+## Execution Order
+
+1. 01_create_tables.sql
+2. 02_Insert_data.sql
+3. 03_views.sql
+4. 04_sample_queries.sql
+
+---
+
+## Highlights
+
+- 16 normalized tables
+- 100+ users
+- 20 companies
+- 25 placement drives
+- 40 job postings
+- 200 job applications
+- 10 SQL views
+- advanced SQL queries
+
+---
+
+## Author
+
+**Hardik Nakum**
+
+B.Tech in Mathematics and Computing  
+DAU (Formally DA-IICT)
+
+---
