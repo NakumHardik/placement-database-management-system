@@ -1,110 +1,81 @@
-\# Placement Database Management System (PDMS)
+# Placement Database Management System (PDMS)
 
+A **Placement Database Management System** designed to streamline campus placement activities for universities and colleges. The project demonstrates complete database design, normalization, SQL programming.
 
+---
 
-An automated, enterprise-grade relational database management system designed to centralize and optimize the university campus placement ecosystem. By replacing traditional manual spreadsheets and paper-based coordination, the system connects Students, Recruiters, and Training and Placement Officers (TPOs) through synchronous role-based access control and real-time process tracking.
+## Features
 
+- Student profile management
+- Company management
+- Job posting management
+- Placement drive scheduling
+- Job application tracking
+- Alumni mentoring
+- Job eligibility management
+- Document management
+- Application status tracking
 
+---
 
-\---
+## Technologies Used
 
+- **Database:** MySQL / PostgreSQL
+- **Language:** SQL
+- **ER Diagram:** Draw.io
+- **Version Control:** Git & GitHub
 
+---
 
-\## 🌟 Core Features \& Capabilities
+## Database Design
 
+### Total Tables
 
+- Users
+- Phone_No
+- Programme
+- Branch
+- Student
+- Document
+- Company
+- Placement_Drive
+- Job_Eligibility
+- Programme_Allowed
+- Branch_Allowed
+- Job_Posting
+- Status
+- Application
+- Alumni
+- Mentoring
 
-\* \*\*Automated Eligibility Checks:\*\* Uses backend verification functions to instantly validate student credentials (minimum CPI constraints, branch restrictions, and backlog limits) against employer requirements before allowing job applications\[cite: 2].
+**Total:** 16 Tables
 
-\* \*\*Student Self-Analytics Dashboard:\*\* Provides custom tracking metrics detailing total applications submitted, round shortlists, peer skill-gap analysis, and individual selection ratios\[cite: 2].
+---
 
-\* \*\*Mentoring \& Guidance Tracking:\*\* Maps students to faculty or alumni mentors, storing session timelines, topics covered, and targeted career readiness feedback\[cite: 2].
+## Database Concepts Implemented
 
-\* \*\*Role-Based Access Control (RBAC):\*\* Secures data integrity at the database level—restricting students to personal profile management, enabling recruiters to post jobs/shortlist candidates, and giving TPOs administrative control over placement schedules\[cite: 2].
+- ER Modeling
+- Relational Schema Design
+- Primary Keys & Foreign Keys
+- Composite Keys
+- Weak Entity
+- ISA (Generalization/Specialization)
+- 1NF, 2NF, 3NF & BCNF
+- Views
+- Advanced SQL Queries
 
+---
 
-
-\---
-
-
-
-\## ⚙️ Technologies Used
-
-
-
-\* \*\*Database Engine:\*\* PostgreSQL / MySQL
-
-\* \*\*Language:\*\* SQL
-
-\* \*\*Architecture Diagramming:\*\* Draw.io\[cite: 2]
-
-\* \*\*Version Control:\*\* Git \& GitHub
-
-
-
-\---
-
-
-
-\## 📊 Database Design \& Concepts
-
-
-
-The underlying schema is built to model intricate campus workflow dependencies while enforcing rigid constraints\[cite: 1, 2].
-
-
-
-\* \*\*Total Relations:\*\* 16 highly structured tables\[cite: 1].
-
-\* \*\*Normalization Level:\*\* Fully optimized to \*\*BCNF\*\* (Boyce-Codd Normal Form) to eliminate data redundancy and anomalies\[cite: 1].
-
-\* \*\*Advanced Concepts Implemented:\*\* Generalization/Specialization (ISA Hierarchy)\[cite: 1], Compound \& Composite Keys\[cite: 1], Referential Integrity Constraints\[cite: 1], Database Views, Stored Procedures, and Automated Database Triggers.
-
-
-
-\### Relational Schema Layout
-
-\* `User` / `Student` / `Alumni` / `Company` (Core Entity Profiles)\[cite: 1]
-
-\* `Phone\_No` / `Document` (Multi-valued attribute handlers using compound keys)\[cite: 1]
-
-\* `Job\_Posting` / `Job\_Eligibility` / `Branch\_Allowed` / `Programme\_Allowed` (Automated criteria filtering layers)\[cite: 1]
-
-\* `Application` / `Status` / `Placement\_Drive` / `Mentoring` (Workflow tracking \& scheduling metrics)\[cite: 1]
-
-
-
-\---
-
-
-
-\## 📂 Project Structure
-
-
+## Project Structure
 
 ```text
-
 DBMS/
-
-├── README.md                           # Professional project documentation
-
-├── ER\_Diagram.drawio.png               # Conceptual entity-relationship layout
-
-├── PDMS\_Relational\_Schema (1).pdf      # Relational schemas \& constraint mappings
-
-├── SRS.pdf                             # Software Requirements Specification document
-
-└── SQL/                                # Database source scripts
-
-&#x20;   ├── 01\_create\_tables.sql            # Table structures, primary \& foreign keys
-
-&#x20;   ├── 02\_Insert\_data.sql              # Mock production setup records
-
-&#x20;   ├── 03\_views.sql                    # Pre-compiled student self-analytics views
-
-&#x20;   ├── 04\_sample\_queries.sql           # Evaluation scripts \& query scenarios
-
-&#x20;   ├── 05\_procedures.sql               # Stored functions for automated checking
-
-&#x20;   └── 06\_triggers.sql                 # Real-time event \& status notification handling
-
+├── README.md
+├── ER_Diagram.drawio.png
+├── PDMS_Relational_Schema (1).pdf
+├── SRS.pdf
+└── SQL/
+    ├── 01_create_tables.sql
+    ├── 02_Insert_data.sql
+    ├── 03_views.sql
+    ├── 04_sample_queries.sql
